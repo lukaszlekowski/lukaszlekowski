@@ -1,16 +1,50 @@
-## Hi there 👋
+# Hi there, I'm Lukasz 👋
 
-<!--
-**lukaszlekowski/lukaszlekowski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm the creator of [www.howtofocus.info](https://www.howtofocus.info)
 
-Here are some ideas to get you started:
+In a world increasingly dominated by the AI goldrush, a relentless flood of content, self-proclaimed gurus, social media, and digital noise, I've made it my mission to bring people the gift of **focus**, **attention**, and **momentary calmness**. For those struggling with distractions, I aim to offer an opportunity and a fighting chance to achieve just a little bit more.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+If even **1 in 10,000** people who visit my project step away from distractions and regain their mental clarity for a moment, I will consider my mission a success. And if that momentary focus can be turned into a first milestone that pivots them towards a better place in life they can be, I hope it helps them—and through them, their loved ones, a friend, a family member, or even a stranger. Then, we might just start a ripple that changes lives.
+
+---
+
+## 🔭 What I'm working on
+
+- 🧠 **[howtofocus.info](https://www.howtofocus.info)** — A distraction-free mental preparation tool for cognitively demanding tasks.
+- 📊 **Personal Trading Dashboard** — Visualizing and consolidating multi-platform investment portfolios.
+- 🧾 **UK Business Tax Deadline Tracker** — A web app to help UK businesses manage accounting and Corporation Tax deadlines.
+- 🤖 **AI Investment Analyst (or AI FinBro Agent)** — An AI agent that conducts market research for investment portfolios and delivers daily updates.
+
+---
+
+## 💡 Interests
+- Neuroscience of focus and attention  
+- Spirituality and consciousness  
+- Human-centered technology  
+- Self-development through stillness, systems, and structure  
+- Webapp development, automation, and behavioral UX
+
+---
+
+## 🌱 Currently learning
+- Full-stack development (Node.js, React, PostgreSQL, Docker, Terraform)  
+- TypeScript and system architecture best practices  
+- UI/UX design principles for minimal cognitive load  
+- Prompt engineering for AI interfaces
+
+---
+
+## 👨‍💼 Background
+I’ve spent over a decade working in **finance, accounting, and tax**.  
+Now I’m a **self-taught software developer and project manager**, combining structured thinking with intuitive design. I'm passionate about creating tools that help people find clarity in a noisy world.
+
+---
+
+## 📫 Let's connect
+- 🌍 Website: [howtofocus.info](https://www.howtofocus.info)  
+- 💼 LinkedIn: [linkedin.com/in/lukaszlekowski](https://linkedin.com/in/lukaszlekowski)
+- 📬 Email: lukasz.lekowski@hotmail.com  
+
+---
+
+> _"In a distracted world, attention is the last remaining superpower."_
