@@ -27,10 +27,12 @@ If even **1 in 10,000** people who visit my project step away from distractions 
 ---
 
 ## 🌱 Currently learning
-- Full-stack development (Node.js, React, PostgreSQL, Docker, Terraform)  
-- TypeScript and system architecture best practices  
-- UI/UX design principles for minimal cognitive load  
-- Prompt engineering for AI interfaces
+- Full-stack development with a focus on: Node.js, React, PostgreSQL
+* Cloud infrastructure and DevOps: Managing cloud instances (e.g., AWS/GCP/Azure,OC), Ubuntu Server administration, Docker, and Terraform
+* Best practices in system architecture
+* UI/UX design principles for creating intuitive, low-cognitive-load interfaces
+* Advanced prompt engineering for effective AI interactions
+* Methodologies for hypothesis-driven development and rapid prototyping
 
 ---
 
