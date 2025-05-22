@@ -28,7 +28,7 @@ If even **1 in 10,000** people who visit my project step away from distractions 
 
 ## 🌱 Currently learning
 - Full-stack development with a focus on: Node.js, React, PostgreSQL
-* Cloud infrastructure and DevOps: Managing cloud instances (e.g., AWS/GCP/Azure,OC), Ubuntu Server administration, Docker, and Terraform
+* Cloud infrastructure and DevOps: Managing cloud instances (e.g., AWS/GCP/Azure/OC), Ubuntu Server administration, Docker, and Terraform
 * Best practices in system architecture
 * UI/UX design principles for creating intuitive, low-cognitive-load interfaces
 * Advanced prompt engineering for effective AI interactions
