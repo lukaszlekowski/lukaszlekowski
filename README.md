@@ -2,18 +2,26 @@
 
 I'm the creator of [www.howtofocus.info](https://www.howtofocus.info)
 
-In a world increasingly dominated by the AI goldrush, a relentless flood of content, self-proclaimed gurus, social media, and digital noise, I've made it my mission to bring people the gift of **focus**, **attention**, and **momentary calmness**. For those struggling with distractions, I aim to offer an opportunity and a fighting chance to achieve just a little bit more.
+In a world increasingly dominated by the AI goldrush, a relentless flood of content, self-proclaimed gurus, social media, and digital noise, I've made it my mission to bring people the gift of **focus**, **attention**, and **momentary calmness**. And for those struggling with distractions, I aim to offer an opportunity and a fighting chance to achieve just a little bit more.
 
 If even **1 in 10,000** people who visit my project step away from distractions and regain their mental clarity for a moment, I will consider my mission a success. And if that momentary focus can be turned into a first milestone that pivots them towards a better place in life they can be, I hope it helps them—and through them, their loved ones, a friend, a family member, or even a stranger. Then, we might just start a ripple that changes lives.
 
 ---
 
-## 🔭 What I'm working on
+### 🔭 What I'm Up To
+
+#### 🚀 Currently Building
 
 - 🧠 **[howtofocus.info](https://www.howtofocus.info)** — A distraction-free mental preparation tool for cognitively demanding tasks.
 - 📊 **Personal Trading Dashboard** — Visualizing and consolidating multi-platform investment portfolios.
 - 🧾 **UK Business Tax Deadline Tracker** — A web app to help UK businesses manage accounting and Corporation Tax deadlines.
 - 🤖 **AI Investment Analyst (or AI FinBro Agent)** — An AI agent that conducts market research for investment portfolios and delivers daily updates.
+
+#### ✅ Completed Projects
+
+- 😂 **[Bad Joke Reset Button](https://joeblackart.com/reset)** — A fun web app for those moments when a joke falls flat. Hit the button to 'erase' the awkwardness, track the global 'resets', and enjoy some curated jokes and quotes. Built with HTML/CSS, React, TypeScript, Docker, and MongoDB, self-hosted on a cloud instance, and secured using SSL certificates and best practices.
+- 
+- 🚚 **[trimsontransport.com](https://trimsontransport.com)** — A WordPress-based website for a UK transport company, self-hosted and managed on a cloud instance.
 
 ---
 
@@ -27,7 +35,7 @@ If even **1 in 10,000** people who visit my project step away from distractions 
 ---
 
 ## 🌱 Currently learning
-- Full-stack development with a focus on: Node.js, React, PostgreSQL
+* Full-stack development with a focus on: Node.js, React, PostgreSQL
 * Cloud infrastructure and DevOps: Managing cloud instances (e.g., AWS/GCP/Azure/OC), Ubuntu Server administration, Docker, and Terraform
 * Best practices in system architecture
 * UI/UX design principles for creating intuitive, low-cognitive-load interfaces
