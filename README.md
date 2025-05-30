@@ -20,7 +20,7 @@ If even **1 in 10,000** people who visit my project step away from distractions 
 #### ✅ Completed Projects
 
 - 😂 **[Bad Joke Reset Button](https://joeblackart.com/reset)** — A fun web app for those moments when a joke falls flat. Hit the button to 'erase' the awkwardness, track the global 'resets', and enjoy some curated jokes and quotes. Built with HTML/CSS, React, TypeScript, Docker, and MongoDB, self-hosted on a cloud instance, and secured using SSL certificates and best practices.
-- 🚚 **[trimsontransport.com](https://trimsontransport.com)** — A WordPress-based website for a UK transport company, self-hosted and managed on a cloud instance.
+- 🚚 **[trimsontransport.com](https://trimsontransport.com)** — A WordPress-based website for a UK transport company, self-hosted and managed on a cloud instance running Ubuntu Linux and standard LAMP stack. 
 
 ---
 
