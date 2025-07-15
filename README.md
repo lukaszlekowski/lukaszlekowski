@@ -26,7 +26,7 @@ If even **1 in 10,000** people who visit my projects step away from distractions
 
 - 💻 [codebase-extractor](https://github.com/lukaszlekowski/codebase-extractor) — A command-line tool that scans your project directory and extracts source code into well-structured Markdown files. It’s perfect for creating complete, organized snapshots of projects—especially for analysis, documentation, or providing context to Large Language Models (LLMs) like GPT-4, Gemini, or Claude. Features include interactive folder selection, smart filtering, configurable scan depth, and YAML metadata in outputs[1].
 - 🚚 **[trimsontransport.com](https://trimsontransport.com)** — A WordPress-based website for a UK transport company, self-hosted and managed on a cloud instance running Ubuntu Linux and standard LAMP stack.
-- 😂 **Bad Joke Reset Button** — A fun web app for those moments when a joke falls flat. Hit the button to 'erase' the awkwardness, track the global 'resets', and enjoy some curated jokes and quotes. Started as a joke between friends and turnedout to be a fun little project. 
+- 😂 **Bad Joke Reset Button** — A fun web app for those moments when a joke falls flat. Hit the button to 'erase' the awkwardness, track the global 'resets', and enjoy some curated jokes and quotes. Started as a joke between friends and turned out to be a surprisingly fun little project. 
 
 
 ---
