@@ -1,6 +1,6 @@
 # Hi there, I'm Lukasz 👋
 
-A tech enthusiast since childhood, I’m passionate about software development and IT. After over a decade in another industry, I followed my calling to create human-centered technology and tools that save time, help people stay focused, connected to their values and make the world better.
+A tech enthusiast since childhood, I’m passionate about software development and IT. After over a decade in another industry, I followed my calling to create human-centered technology and tools that save time, help people stay focused, connected to their values and make the world better a better place.
 
 Now I am saving the world in my own way — one line of code at a time.
 
