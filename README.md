@@ -19,6 +19,7 @@ Technology never really left the picture. Throughout my finance career I automat
 As AI accelerated what could be built, that technical side increasingly became my primary direction. I now build across applied AI, agent tooling, automation and product development - from coding-agent orchestration and LLM research systems to business-rule engines and mobile applications.
 
 </h6>
+
 <br>
 
 <div align="center">
@@ -66,18 +67,178 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 <h6>
 
-| Project | Description | Stack |
-| ------- | ---------- | ----- |
-| **[orc-smash](https://github.com/lukaszlekowski/orc-smash)** | (Orchestrator Run) A command-line harness for working with CLI coding agents. (OpenAI Codex, Anthropic Claude Code, Google Antigravity, Opencode CLI.  planning, coding and review run as stages, each handled by an agent you choose, with checks on what an agent produces and enough history to pick up interrupted work. For anyone who likes working with agents but wants to stay involved in the decisions. | TypeScript · Node.js · Zod · Vitest · GitHub Actions |
-| **Social Stock Screener** | A local web app that turns investment-video transcripts into company research I can revisit. It pulls out the companies being discussed, organises the findings and links them back to the original transcript — useful when several people have talked about the same business and I want to compare what they actually said. | Python · Django · JavaScript · LLM APIs |
-| **UK Accounting Deadline Checker** | Checks Companies House information, calculates deadlines and shows what's changed across a company watchlist. It grew out of an accounting problem I knew well: deadlines spread across different clients and records. I presented the first proof of concept at BKL in 2021 and rebuilt it in 2026 with saved snapshots, change reports and exports. | Python · Companies House API · Automated tests |
-| **Thou Art** | Daily affirmations — what started as a web project has grown into a Flutter mobile app. Browse affirmation collections, save favourites, write your own and set reminders, with animated backgrounds and ambient audio. Node.js/Express backend with MongoDB, Firebase sign-in, local SQLite storage and syncing between phone and server; premium collections on the way through RevenueCat. Working towards launch. | Flutter · Dart · Node.js · Express · MongoDB · SQLite · Firebase · RevenueCat |
-| **Personal Career OS** | My own workspace for collecting project evidence, researching jobs and keeping applications organised, with a browser interface for searching roles and comparing them against the work I've actually done. You're reading one of the things that came out of it. | Python · TypeScript · React · Next.js |
-| **Codebase Extractor** | (no longer mentained) | Python |
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Overview</th>
+    <th>Stack</th>
+  </tr>
+
+
+<!-- orc-smash -->
+<tr>
+  <td rowspan="2">
+    <strong>
+      <a href="https://github.com/lukaszlekowski/orc-smash">orc-smash</a>
+    </strong>
+  </td>
+  <td>
+    <strong>TL;DR:</strong>
+    A command-line orchestration system for working with coding agents without handing over the entire development process to them. It can coordinate Codex, Claude Code, Antigravity and OpenCode across separate research, planning, implementation, review and audit stages, with different agents or models assigned to different jobs. Runs can be interrupted and resumed, previous decisions remain inspectable, and the human stays involved at each important transition.
+  </td>
+  <td rowspan="2">
+    TypeScript · Node.js · Zod · Vitest · GitHub Actions
+  </td>
+</tr>
+<tr>
+  <td>
+    <details>
+      <summary>
+        <strong>Engineering</strong>
+        <small>(click to expand)</small>
+      </summary>
+      <small>
+        The harness never calls model APIs directly: real coding-agent CLIs run as subprocesses behind a shared AgentAdapter interface, with per-stage provider, model and effort routing across a catalogue of models. Pipelines are declarative YAML manifests supporting roles, skills, research-first flows and evaluate/repair loops. Agent stdout is deliberately not treated as proof of success; each stage must write a structured Markdown artifact that satisfies strict contracts around decisions, outcomes and evidence. Invalid or unparseable results fail closed. State is database-free and reconstructed from content-addressed artifacts carrying SHA-256 identity, provenance and parent lineage, allowing exact resume while rejecting stale or modified artifacts. Process handling also includes provider-misbehaviour detection and identity-gated process termination safeguards.
+      </small>
+    </details>
+  </td>
+</tr>
+
+
+<!-- Social Stock Screener -->
+<tr>
+  <td rowspan="2">
+    <strong>Social Stock Screener</strong>
+  </td>
+  <td>
+    <strong>TL;DR:</strong>
+    A research platform that turns hours of investment-video discussion into structured company research. It identifies which businesses are being discussed, what was actually said about them and the evidence behind each finding, then lets me revisit and compare opinions across channels and time instead of repeatedly searching through transcripts and videos.
+  </td>
+  <td rowspan="2">
+    Python · Django · JavaScript · LLM APIs · Local Agent CLIs
+  </td>
+</tr>
+<tr>
+  <td>
+    <details>
+      <summary>
+        <strong>Engineering</strong>
+        <small>(click to expand)</small>
+      </summary>
+      <small>
+        The architecture follows a deliberate <em>“LLM proposes, code disposes”</em> trust boundary. A two-stage extraction and synthesis pipeline uses LLMs for interpretation, while deterministic code controls entity IDs, evidence selection, enums, ranking arithmetic and locality rules — with no LLM-as-judge step. The provider layer supports multiple HTTP APIs as well as local coding-agent CLIs used as inference transports, with explicit per-stage model routing and no silent fallback. Long transcripts are processed through character-budget windowing, parallel map stages and hierarchical pairwise merges, with identity-validated checkpoints for resume. Generated artifacts are freshness-checked using SHA-256 identities derived from model, prompt, windowing and tool versions. The system also includes a custom caption-segmentation algorithm with scored boundaries and quality diagnostics.
+      </small>
+    </details>
+  </td>
+</tr>
+
+
+<!-- Accounting Deadline Checker -->
+<tr>
+  <td rowspan="2">
+    <strong>Accounting Deadline Checker</strong>
+  </td>
+  <td>
+    <strong>TL;DR:</strong>
+    A monitoring tool for UK company deadlines and register changes, built around a workflow I used to deal with manually in accounting. It watches a list of companies, calculates relevant filing dates, highlights what has changed since the previous run and makes stale or failed data visible rather than silently presenting it as current.
+  </td>
+  <td rowspan="2">
+    Python stdlib · Companies House API · LaunchAgent · Automated Tests
+  </td>
+</tr>
+<tr>
+  <td>
+    <details>
+      <summary>
+        <strong>Engineering</strong>
+        <small>(click to expand)</small>
+      </summary>
+      <small>
+        Built entirely with the Python standard library and no third-party runtime dependencies. The Companies House client uses typed error classes, retries only transient failures, honours but caps Retry-After values, performs parallel fetches and falls back to a last-good cache with explicit staleness markers. Daily snapshots feed a domain-specific diff engine covering deadline movements, missing or returning companies, address changes, charges and filing-status changes. Snapshot integrity is protected by refusing partial one-off runs from becoming the baseline for later comparisons. Corporation-tax deadlines are derived locally because Companies House does not expose them directly, and statutory edge cases were verified against primary legislation rather than inferred from common practice. It can run automatically on macOS using LaunchAgent and exposes meaningful process exit codes for scripting.
+      </small>
+    </details>
+  </td>
+</tr>
+
+
+<!-- Thou Art -->
+<tr>
+  <td rowspan="2">
+    <strong>Thou Art</strong>
+  </td>
+  <td>
+    <strong>TL;DR:</strong>
+    A pre-launch consumer mobile app for building a daily affirmations routine. Users can browse collections, save favourites, write their own affirmations, schedule reminders and personalise the experience with animated backgrounds and ambient audio. Behind that simple interface is a full mobile/backend system designed to keep user data, premium access and content state working reliably across poor connectivity, reinstalls and app-store subscription flows.
+  </td>
+  <td rowspan="2">
+    Flutter · Dart · Node.js · Express · MongoDB · SQLite · Firebase · RevenueCat
+  </td>
+</tr>
+<tr>
+  <td>
+    <details>
+      <summary>
+        <strong>Engineering</strong>
+        <small>(click to expand)</small>
+      </summary>
+      <small>
+        The Flutter client uses an offline-first synchronisation layer backed by SQLite, with a pending-sync queue, parent/child dependency ordering, retries and connectivity-triggered flushing. Backend-authoritative default content uses database constraints to prevent duplicate creation under concurrency. Premium access is handled through RevenueCat with webhook-first synchronisation, cached entitlement snapshots, REST fallback and server-computed outage grace, while the client resolves access through a fail-closed entitlement state machine. A centralised visibility-policy layer generates the filters that decide which content each user can see. The app also contains a typed semantic design system with contrast checks, custom animated painters and a multi-layer ambient-audio engine behind a dedicated interface.
+      </small>
+    </details>
+  </td>
+</tr>
+
+
+<!-- Codebase Extractor -->
+<tr>
+  <td rowspan="2">
+    <strong>
+      <a href="https://github.com/lukaszlekowski/codebase-extractor/">Codebase Extractor</a>
+    </strong>
+  </td>
+  <td>
+    <strong>TL;DR:</strong>
+    A published PyPI tool for turning a software repository into a clean, structured Markdown snapshot that can be reviewed by a person or passed directly to an LLM. Instead of manually copying files and accidentally including dependencies, build output or irrelevant content, the tool lets the user visually choose what part of a codebase should become context.
+  </td>
+  <td rowspan="2">
+    Python · Textual · TUI · PyPI
+  </td>
+</tr>
+<tr>
+  <td>
+    <details>
+      <summary>
+        <strong>Engineering</strong>
+        <small>(click to expand)</small>
+      </summary>
+      <small>
+        The application uses a Textual terminal UI with an interactive folder tree, configurable scan depth and subtree selection. Its extraction pipeline applies configurable filters for dependency directories, version-control metadata, IDE files, build artifacts and oversized files before assembling the selected source into Markdown. Every generated snapshot carries YAML front matter containing run identity, timestamps and file / character / word counts, making the output machine-readable as well as human-readable. The package includes both interactive and CLI entry points, graceful interruption handling and configurable extraction instructions, and is distributed publicly through PyPI for installation outside my own development environment.
+      </small>
+    </details>
+  </td>
+</tr>
+
+
+</table>
+
+
 
 </h6>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <details>
   <summary>
@@ -85,11 +246,51 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 <h6>
 
-| Project | Description | Stack |
-| ------- | ---------- | ----- |
-| **Neuroscience Pipeline** | (Orchestrator Run) A command-line harness for working with CLI coding agents. (OpenAI Codex, Anthropic Claude Code, Google Antigravity, Opencode CLI.  planning, coding and review run as stages, each handled by an agent you choose, with checks on what an agent produces and enough history to pick up interrupted work. For anyone who likes working with agents but wants to stay involved in the decisions. | TypeScript · Node.js · Zod · Vitest · GitHub Actions |
-| **Conversational Framework** | A local web app that turns investment-video transcripts into company research I can revisit. It pulls out the companies being discussed, organises the findings and links them back to the original transcript — useful when several people have talked about the same business and I want to compare what they actually said. | Python · Django · JavaScript · LLM APIs |
-| **Focus Screen** | Checks Companies House information, calculates deadlines and shows what's changed across a company watchlist. It grew out of an accounting problem I knew well: deadlines spread across different clients and records. I presented the first proof of concept at BKL in 2021 and rebuilt it in 2026 with saved snapshots, change reports and exports. | Python · Companies House API · Automated tests |
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Overview</th>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Looper</strong>
+    </td>
+    <td>
+      A reasoning engine for taking a person's description of what is happening internally — distraction, avoidance, task-switching, difficulty starting, loss of focus — and processing it through a structured model of attention and behaviour. The model is based on my gated theory of attention and additional framework of my design that has been completed. It brings neuroscience, psychology and psychiatry together. 
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Conversation Framework</strong>
+    </td>
+    <td>
+      A practice system for developing interpersonal communication skills by breaking conversation into components that can actually be observed and trained. The framework models intent, context, listening, interpretation, response construction, conversational depth, energy, rapport, conflict, communication techniques and common failure patterns, with the aim of turning vague advice like “communicate better” into targeted drills and feedback.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Focus Overlay</strong>
+    </td>
+    <td>
+      A desktop focus tool that keeps one or several selected windows visually dominant while everything else is greyed out, dimmed or hidden. The aim is to reduce competing visual information without forcing the user into a separate workspace, while still allowing fast switching between task contexts and multi-window workflows.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Values & Principles Discovery</strong>
+    </td>
+    <td>
+      An interactive website for exploring personal values and principles. Instead of asking users to choose from a flat list of abstract words, it would use definitions, examples, comparisons and guided reflection to help people discover which values genuinely resonate, understand trade-offs between them and turn those values into clearer personal principles.
+    </td>
+  </tr>
+</table>
+
+
 
 </h6>
   
