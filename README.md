@@ -7,6 +7,7 @@
 </div>
 <h6>
 Technical foundation in IT systems. More than a decade of professional experience across accounting, tax, finance and assurance. Now building and automating with AI and software.
+
 I build software for complex workflows and problems I understand from the inside.
 
 My technical foundation started with a four-year Technical Diploma in Information Technology (Polish: Technik Informatyk) UK equivalent Level 3 Technical Qualification in IT / Digital Services or an Advanced IT) programme covering programming, networks, databases and operating systems.
@@ -65,23 +66,40 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 <h6>
 
-| Project | What it is | Stack |
+| Project | Description | Stack |
 | ------- | ---------- | ----- |
-| 🤖 **[orc-smash](https://github.com/lukaszlekowski/orc-smash)** | A command-line harness for working with coding agents: planning, coding and review run as stages, each handled by an agent you choose, with checks on what an agent produces and enough history to pick up interrupted work. For anyone who likes working with agents but wants to stay involved in the decisions. | TypeScript · Node.js · Zod · Vitest · GitHub Actions |
-| 📊 **Social Stock Screener** | A local web app that turns investment-video transcripts into company research I can revisit. It pulls out the companies being discussed, organises the findings and links them back to the original transcript — useful when several people have talked about the same business and I want to compare what they actually said. | Python · Django · JavaScript · LLM APIs |
-| 🧾 **Accounting Deadline Checker** | Checks Companies House information, calculates deadlines and shows what's changed across a company watchlist. It grew out of an accounting problem I knew well: deadlines spread across different clients and records. I presented the first proof of concept at BKL in 2021 and rebuilt it in 2026 with saved snapshots, change reports and exports. | Python · Companies House API · Automated tests |
-| ✨ **Thou Art** | Daily affirmations — what started as a web project has grown into a Flutter mobile app. Browse affirmation collections, save favourites, write your own and set reminders, with animated backgrounds and ambient audio. Node.js/Express backend with MongoDB, Firebase sign-in, local SQLite storage and syncing between phone and server; premium collections on the way through RevenueCat. Working towards launch. | Flutter · Dart · Node.js · Express · MongoDB · SQLite · Firebase · RevenueCat |
-| 🗂️ **Personal Career OS** | My own workspace for collecting project evidence, researching jobs and keeping applications organised, with a browser interface for searching roles and comparing them against the work I've actually done. You're reading one of the things that came out of it. | Python · TypeScript · React · Next.js |
+| **[orc-smash](https://github.com/lukaszlekowski/orc-smash)** | (Orchestrator Run) A command-line harness for working with CLI coding agents. (OpenAI Codex, Anthropic Claude Code, Google Antigravity, Opencode CLI.  planning, coding and review run as stages, each handled by an agent you choose, with checks on what an agent produces and enough history to pick up interrupted work. For anyone who likes working with agents but wants to stay involved in the decisions. | TypeScript · Node.js · Zod · Vitest · GitHub Actions |
+| **Social Stock Screener** | A local web app that turns investment-video transcripts into company research I can revisit. It pulls out the companies being discussed, organises the findings and links them back to the original transcript — useful when several people have talked about the same business and I want to compare what they actually said. | Python · Django · JavaScript · LLM APIs |
+| **UK Accounting Deadline Checker** | Checks Companies House information, calculates deadlines and shows what's changed across a company watchlist. It grew out of an accounting problem I knew well: deadlines spread across different clients and records. I presented the first proof of concept at BKL in 2021 and rebuilt it in 2026 with saved snapshots, change reports and exports. | Python · Companies House API · Automated tests |
+| **Thou Art** | Daily affirmations — what started as a web project has grown into a Flutter mobile app. Browse affirmation collections, save favourites, write your own and set reminders, with animated backgrounds and ambient audio. Node.js/Express backend with MongoDB, Firebase sign-in, local SQLite storage and syncing between phone and server; premium collections on the way through RevenueCat. Working towards launch. | Flutter · Dart · Node.js · Express · MongoDB · SQLite · Firebase · RevenueCat |
+| **Personal Career OS** | My own workspace for collecting project evidence, researching jobs and keeping applications organised, with a browser interface for searching roles and comparing them against the work I've actually done. You're reading one of the things that came out of it. | Python · TypeScript · React · Next.js |
+| **Codebase Extractor** | (no longer mentained) | Python |
 
 </h6>
 
 </div>
 
+<details>
+  <summary>
+    <h5>In Design:</h5> <h6>(click to expand)</h6></summary>
+
+<h6>
+
+| Project | Description | Stack |
+| ------- | ---------- | ----- |
+| **Neuroscience Pipeline** | (Orchestrator Run) A command-line harness for working with CLI coding agents. (OpenAI Codex, Anthropic Claude Code, Google Antigravity, Opencode CLI.  planning, coding and review run as stages, each handled by an agent you choose, with checks on what an agent produces and enough history to pick up interrupted work. For anyone who likes working with agents but wants to stay involved in the decisions. | TypeScript · Node.js · Zod · Vitest · GitHub Actions |
+| **Conversational Framework** | A local web app that turns investment-video transcripts into company research I can revisit. It pulls out the companies being discussed, organises the findings and links them back to the original transcript — useful when several people have talked about the same business and I want to compare what they actually said. | Python · Django · JavaScript · LLM APIs |
+| **Focus Screen** | Checks Companies House information, calculates deadlines and shows what's changed across a company watchlist. It grew out of an accounting problem I knew well: deadlines spread across different clients and records. I presented the first proof of concept at BKL in 2021 and rebuilt it in 2026 with saved snapshots, change reports and exports. | Python · Companies House API · Automated tests |
+
+</h6>
+  
+</details>
+
 
 
 <details>
   <summary>
-    <h5>Trivia & Fun Facts: </h5><h6>(click to expand)</h6></summary>
+    <h5>Trivia & Fun Facts:</h5> <h6>(click to expand)</h6></summary>
 
 <h6>
 
@@ -99,6 +117,9 @@ As AI accelerated what could be built, that technical side increasingly became m
 </h6>
   
 </details>
+
+
+
 
 
 
