@@ -1,9 +1,11 @@
-#### Hi, I'm Lukasz 👋
+# Hi, I'm Lukasz 👋
 
 <p align="center"><img width="640" alt="image" src="https://github.com/user-attachments/assets/6d9c871f-5c49-47c1-b8f5-b81a9fb1cb4f" /></p>
 
 <div align="center">
-About Me:
+  
+_About Me:_
+
 </div>
 Technical foundation in IT systems. More than a decade of professional experience across accounting, tax, finance and assurance. Now building and automating with AI and software.
 
@@ -60,7 +62,8 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 <!-- PROJECTS, LANGUAGES AND TOOLS -->
 <div align="center">
-Projects, Languages & Tools:
+  
+_Projects, Languages & Tools:_
 
 <table>
   <tr>
@@ -272,8 +275,7 @@ Projects, Languages & Tools:
 </details>
 
 <details>
-  <summary>
-    Trivia & Fun Facts: (click to expand)</h6></summary>
+  <summary>Trivia & Fun Facts: (click to expand)</summary>
 
 - I learned how to use a PC from a book. My grandmother bought me a Windows 95 book (hardcover!) and I learned from it at home, then went to a friend’s house to practise on his PC. That friend is now a professor and leads development work on one of Poland’s major LLMs. I eventually caught up and bought a computer.
 - At 13, a few friends and I built our own LAN across a five-storey block of flats with ten entrances. We ran the cables ourselves, connected around ten users and shared a blazing 512 kb/s internet connection. It was probably my first real infrastructure project. (Health & Safety, anyone?)
