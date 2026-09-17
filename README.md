@@ -7,7 +7,7 @@
 _About Me:_
 
 </div>
-Technical foundation in IT systems. More than a decade of professional experience across accounting, tax, finance and assurance. Now building and automating with AI and software.
+Technical foundation in IT systems and software. More than a decade of professional experience across accounting, tax, finance and assurance. Now building and automating with AI and software.
 
 I build software for complex workflows and problems I understand from the inside.
 
@@ -240,7 +240,7 @@ _Projects, Languages & Tools:_
       <strong>Looper</strong>
     </td>
     <td>
-      A reasoning engine for taking a person's description of what is happening internally — distraction, avoidance, task-switching, difficulty starting, loss of focus — and processing it through a structured model of attention and behaviour. The model is based on my gated theory of attention and additional framework of my design that has been completed. It brings neuroscience, psychology and psychiatry together. 
+      A reasoning engine for taking a person's description of what is happening internally — distraction, avoidance, task-switching, difficulty starting, loss of focus — and processing it through a structured model of attention and behaviour. The model is based on my gated theory of attention and additional framework of my own design that has been completed. It brings neuroscience, psychology and psychiatry together. 
     </td>
   </tr>
 
