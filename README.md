@@ -3,9 +3,8 @@
 <p align="center"><img width="640" alt="image" src="https://github.com/user-attachments/assets/6d9c871f-5c49-47c1-b8f5-b81a9fb1cb4f" /></p>
 
 <div align="center">
-<h5>About Me:</h5>
+About Me:
 </div>
-<h6>
 Technical foundation in IT systems. More than a decade of professional experience across accounting, tax, finance and assurance. Now building and automating with AI and software.
 
 I build software for complex workflows and problems I understand from the inside.
@@ -17,8 +16,6 @@ I later moved into accounting and finance, earning BA Hons 2.1 in Accounting & F
 Technology never really left the picture. Throughout my finance career I automated processes, evaluated systems, built internal tools and kept working on technical projects both inside and outside work.
 
 As AI accelerated what could be built, that technical side increasingly became my primary direction. I now build across applied AI, agent tooling, automation and product development - from coding-agent orchestration and LLM research systems to business-rule engines and mobile applications.
-
-</h6>
 
 <br>
 
@@ -63,9 +60,7 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 <!-- PROJECTS, LANGUAGES AND TOOLS -->
 <div align="center">
-<h5>Projects, Languages & Tools:</h5>
-
-<h6>
+Projects, Languages & Tools:
 
 <table>
   <tr>
@@ -220,31 +215,15 @@ As AI accelerated what could be built, that technical side increasingly became m
 
 
 </table>
-
-
-
-</h6>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 <details>
   <summary>
-    <h5>In Design:</h5> <h6>(click to expand)</h6></summary>
+    In Design: (click to expand)</summary>
 
-<h6>
+
 
 
 <table>
@@ -289,20 +268,12 @@ As AI accelerated what could be built, that technical side increasingly became m
     </td>
   </tr>
 </table>
-
-
-
-</h6>
   
 </details>
 
-
-
 <details>
   <summary>
-    <h5>Trivia & Fun Facts:</h5> <h6>(click to expand)</h6></summary>
-
-<h6>
+    Trivia & Fun Facts: (click to expand)</h6></summary>
 
 - I learned how to use a PC from a book. My grandmother bought me a Windows 95 book (hardcover!) and I learned from it at home, then went to a friend’s house to practise on his PC. That friend is now a professor and leads development work on one of Poland’s major LLMs. I eventually caught up and bought a computer.
 - At 13, a few friends and I built our own LAN across a five-storey block of flats with ten entrances. We ran the cables ourselves, connected around ten users and shared a blazing 512 kb/s internet connection. It was probably my first real infrastructure project. (Health & Safety, anyone?)
@@ -314,15 +285,8 @@ As AI accelerated what could be built, that technical side increasingly became m
 - I spent more than a decade working with clients, preparing financial statements, designing controls, applying tax rules and building business processes. Working directly with private clients, business owners, directors, government representatives and senior stakeholders taught me how to explain complex problems clearly to both technical and non-technical people. From sole traders holding Royal Warrants to FTSE 100 technology companies.
 - In 2021, while working as a senior auditor, I designed and built a proof of concept for an application to track accounting and tax deadlines across an accounting firm. I worked with directors, IT, external software providers and data specialists while developing the application itself. (No AI!)
 - In 2022, I was the person walking around the office showing colleagues what the new generation of AI tools could do. Most people were considerably less interested in them than I was.
-
-</h6>
   
 </details>
-
-
-
-
-
 
 
 
